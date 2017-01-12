@@ -1,0 +1,35 @@
+{
+  "name": "redux-models-mixin-crud",
+  "version": "0.0.2",
+  "description": "",
+  "main": "build/index.js",
+  "files": [
+    "build",
+    "src",
+    "test"
+  ],
+  "scripts": {
+    "build": "rimraf build && babel src --out-dir build",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vshushkov/redux-models.git"
+  },
+  "author": "Vladimir Shushkov <vladimir@shushkov.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "redux-actions": "^1.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-jest": "^17.0.2",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.11.6",
+    "rimraf": "^2.5.4"
+  }
+}

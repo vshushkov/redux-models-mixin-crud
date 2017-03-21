@@ -14,6 +14,7 @@ export default function ({ apiCreator = null, baseUrl = null, methods = {} } = {
         apiCreator.create({
           create: 'POST /',
           updateById: 'PUT /:id',
+          patchById: 'PATCH /:id',
           deleteById: 'DELETE /:id',
           find: 'GET /',
           findById: 'GET /:id'
@@ -21,6 +22,7 @@ export default function ({ apiCreator = null, baseUrl = null, methods = {} } = {
         Object.assign({
           create: notImplemented,
           updateById: notImplemented,
+          patchById: notImplemented,
           deleteById: notImplemented,
           find: notImplemented,
           findById: notImplemented
